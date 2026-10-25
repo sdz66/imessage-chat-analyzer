@@ -144,6 +144,10 @@ def run_export(export_dir: Path, target: str | None) -> str:
     if proc.returncode != 0:
         err = (proc.stderr or proc.stdout or "").strip().splitlines()
         hint = err[-1] if err else "未知错误"
+        if "contains existing" in hint:
+            raise RuntimeError(
+                f"导出目录已有 txt 数据（{export_dir}），imessage-exporter 不覆盖已有导出。"
+                "已有数据仍可正常浏览分析；如需重新导出，先清空该目录或用终端导出到新目录")
         if "full disk access" in hint.lower() or "unable to open database" in hint.lower():
             hint += "（需给运行本程序的终端 App 开启完全磁盘访问权限并重启终端）"
         raise RuntimeError(f"导出失败: {hint}")

@@ -1,0 +1,71 @@
+Jan 9, 2026  7:30:00 PM (Read by them after 2 minutes, 30 seconds)
+Me
+周六的创意市集去吗 听说有手作摊位
+
+Jan 9, 2026  7:32:31 PM
+小李
+去！几点碰头
+
+Jan 9, 2026  7:35:10 PM
+Me
+九点半北门
+    Jan 9, 2026  7:32:31 PM
+    小李
+    几点碰头
+This message responded to an earlier message.
+
+Jan 9, 2026  7:36:00 PM (Read by them after 5 seconds)
+Me
+/Users/demo/Library/Messages/Attachments/ab/01/FAKE-UUID/IMG_1001.HEIC
+今年的海报，比去年好看
+
+Jan 9, 2026  7:37:12 PM (Read by them after 1 second)
+小李
+IMG_2001.HEIC
+我收藏了摊位地图
+
+Jan 9, 2026  7:37:40 PM
+Me
+Sent with Loud
+周六见🎉
+
+Jan 9, 2026  7:38:02 PM (Read by them after 3 seconds)
+小李
+IMG_2002.PNG IMG_2003.PNG
+这俩摊主的作品不错
+Tapbacks:
+    Laughed by Me
+
+Jan 9, 2026  10:30:00 PM (Read by you after 12 hours, 30 minutes)
+小李
+今天淘到的杯子太值了
+Digital Touch Sketch (3 strokes, 45 points)
+
+Jan 9, 2026  10:31:15 PM
+Me
+挺好看，摊主我已经关注了
+
+Jan 9, 2026  10:32:00 PM (Read by them after 10 seconds)
+小李
+https://maps.apple.com/place?address=Test&coordinate=31.0,119.0&name=%E5%B8%82%E9%9B%86
+下个月这个市集还有一场
+
+Jan 10, 2026  8:00:00 AM
+Me
+Sticker from Me: /Users/demo/Library/Messages/StickerCache/fake-sticker/fake.png.heic (App: Memoji)
+早安
+
+Jan 10, 2026  8:00:10 AM Me sent a Digital Touch heartbeat.
+
+Jan 11, 2026  11:00:00 PM (Read by them after 30 seconds)
+Me
+Jan 11, 2026 10:58:00 PM 市集 Edited 2 minutes later: 市集见
+这周逛得腿酸
+
+Jan 11, 2026  11:05:00 PM
+小李
+睡吧，下周再约
+
+Jan 11, 2026  11:06:00 PM
+Me
+好梦🌙

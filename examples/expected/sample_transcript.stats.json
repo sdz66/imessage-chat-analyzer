@@ -1,0 +1,137 @@
+{
+  "name": "示例会话",
+  "date_start": "2026-01-09",
+  "date_end": "2026-01-11",
+  "active_days": 3,
+  "total_messages": 14,
+  "per_sender": {
+    "Me": {
+      "messages": 8,
+      "text_messages": 8,
+      "chars": 90,
+      "images": 1,
+      "videos": 0,
+      "stickers": 1,
+      "digital_touch": 0,
+      "locations": 0,
+      "replies": 1,
+      "questions": 0,
+      "top_emoji": [
+        [
+          "🎉",
+          1
+        ],
+        [
+          "🌙",
+          1
+        ]
+      ]
+    },
+    "小李": {
+      "messages": 6,
+      "text_messages": 6,
+      "chars": 51,
+      "images": 3,
+      "videos": 0,
+      "stickers": 0,
+      "digital_touch": 1,
+      "locations": 1,
+      "replies": 0,
+      "questions": 0,
+      "top_emoji": []
+    }
+  },
+  "reply_latency_min": {
+    "Me": {
+      "median": 1.125,
+      "mean": 1.3416666666666666,
+      "n": 4
+    },
+    "小李": {
+      "median": 1.2,
+      "mean": 1.9666666666666666,
+      "n": 5
+    }
+  },
+  "read_delay_min": {
+    "owner_read_other_median": 750.0,
+    "other_read_owner_median": 0.125
+  },
+  "sessions": {
+    "count": 3,
+    "gap_hours": 4.0,
+    "openers": {
+      "Me": 3
+    },
+    "closers": {
+      "小李": 1,
+      "Me": 2
+    },
+    "night_sessions": 1,
+    "avg_len": 4.7,
+    "longest": {
+      "count": 10,
+      "start": "2026-01-09T19:30",
+      "end": "2026-01-09T22:32",
+      "open": "Me",
+      "close": "小李"
+    },
+    "first_message_of_day": {
+      "Me": 3
+    }
+  },
+  "per_day_top": [
+    [
+      "2026-01-09",
+      10
+    ],
+    [
+      "2026-01-11",
+      3
+    ],
+    [
+      "2026-01-10",
+      1
+    ]
+  ],
+  "hours": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0,
+    "6": 0,
+    "7": 0,
+    "8": 1,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 0,
+    "18": 0,
+    "19": 7,
+    "20": 0,
+    "21": 0,
+    "22": 3,
+    "23": 3
+  },
+  "effects": {
+    "Loud": 1
+  },
+  "tapbacks": {
+    "Laughed": 1
+  },
+  "first_message": {
+    "sender": "Me",
+    "at": "2026-01-09T19:30"
+  },
+  "last_message": {
+    "sender": "Me",
+    "at": "2026-01-11T23:06"
+  }
+}

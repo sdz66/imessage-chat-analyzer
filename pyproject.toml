@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imsg-analyzer"
+version = "0.1.0"
+description = "Parse imessage-exporter transcripts into statistics and LLM-ready condensed transcripts (stdlib only)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "单栋芝" }]
+keywords = ["imessage", "chat", "analysis", "imessage-exporter", "chat.db"]
+
+[project.scripts]
+imsg-analyze = "imsg_analyzer.__main__:main"
+
+[tool.setuptools]
+packages = ["imsg_analyzer"]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "iMessage 聊天记录分析"
+  short_description: "导出并统计 iMessage 会话，产出 LLM 友好转写与分析报告"
+  default_prompt: "帮我导出并分析我的 iMessage 聊天记录"

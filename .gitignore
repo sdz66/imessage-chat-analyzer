@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# 绝不提交聊天数据与个人分析结果
+exports/
+imsg_analysis/
+*.condensed.txt
+*.stats.json
+*.stats.md
+!examples/expected/*
+*.db
+.DS_Store

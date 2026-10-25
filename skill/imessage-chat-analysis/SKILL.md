@@ -34,6 +34,8 @@ python3 -m imsg_analyzer ~/imessage_export -o imsg_analysis
 
 每个会话产出三件套：`*.stats.md`（统计报告）、`*.stats.json`（机器可读）、`*.condensed.txt`（LLM 友好转写：媒体折叠为 `[图×N]` 标签，按天分节）。批量模式额外产出 `index.md` 总览。
 
+图形界面替代：`python3 -m imsg_analyzer.webui <导出目录>` 启动本地 Web 控制台（仅绑定 127.0.0.1），提供会话浏览、调用 imessage-exporter 导出、统计/转写查看、OpenAI 兼容 API 一键分析。用户偏好图形界面时推荐；提醒 API Key 只存页面内存。
+
 ## 3. 产出分析
 
 1. 读 `stats.md` 拿数字，读 `condensed.txt` 拿内容；转写很大时分段读（单次 >25k tokens 就用 offset 分页），优先读完整个时间跨度再下结论。

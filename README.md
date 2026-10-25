@@ -60,6 +60,35 @@ python3 -m imsg_analyzer ~/imessage_export -o imsg_analysis
 
 样例输入输出见 [examples/](examples/)。
 
+## 本地 Web 控制台（一键导出 + 分析）
+
+不想敲命令的话，一个入口全搞定：
+
+```bash
+python3 -m imsg_analyzer.webui                 # 默认读 ~/imessage_export，自动打开浏览器
+python3 -m imsg_analyzer.webui <其他导出目录> -p 9000
+```
+
+单页界面（只绑定 127.0.0.1）：
+
+- 会话列表按消息量排序，支持搜索
+- 「运行全量导出」按钮直接调用 imessage-exporter（同样要求该终端 App 有完全磁盘访问权限）
+- 每个会话的统计报告（渲染成表格）/ 转写全文（复制、下载）
+- AI 分析：选模板 → 填 OpenAI 兼容 API 地址与 Key → 一键出报告
+
+密钥安全：API Key 只保存在页面内存中，随请求直达你填写的 API 地址；本服务不落盘、不经手任何第三方。
+
+## iPhone 用户流程
+
+iOS 沙盒不允许在手机上直接导出 iMessage——"一键"发生在电脑上，iPhone 用户多一步备份：
+
+1. 用数据线把 iPhone 备份到电脑：Mac 用 Finder（选中设备 → 立即备份），Windows 用 iTunes；**加密备份也可以**，后面能解
+2. 导出：`imessage-exporter -f txt -p "<备份目录>"`
+   - macOS 备份目录：`~/Library/Application Support/MobileSync/Backup/<设备UDID>`
+   - Windows 备份目录：`%USERPROFILE%\Apple\MobileSync\Backup\<设备UDID>`
+   - 加密备份会提示输入备份密码
+3. 之后与 Mac 用户完全一致：`imsg_analyzer` 转析、Web 控制台、skill 全部通用
+
 ## 作为 Agent Skill 使用
 
 本仓库自带一个 [skill](skill/imessage-chat-analysis/SKILL.md)，安装后 agent 会自动处理"导出 → 解析 → 分析"全流程：

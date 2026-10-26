@@ -1,6 +1,6 @@
 ---
 name: imessage-chat-analysis
-description: 导出 iMessage/短信聊天记录并做统计分析与 AI 文字分析（关系/感情状态分析、聊天年度报告、沟通模式总结）。当用户想分析 iMessage 或短信聊天记录、做聊天数据年度报告、分析两个人聊天记录的感情状态或沟通习惯，或提到 imessage-exporter、chat.db、聊天记录导出时使用。仅限 macOS/iOS 备份数据。
+description: 导出 iMessage/短信聊天记录并做统计分析与 AI 文字分析（关系/感情状态分析、聊天年度报告、沟通模式总结）。当用户想分析 iMessage 或短信聊天记录、做聊天数据年度报告、分析两个人聊天记录的感情状态或沟通习惯，或提到 imessage-exporter、chat.db、聊天记录导出时使用。仅限 macOS。
 ---
 
 # iMessage 聊天记录分析
@@ -15,7 +15,6 @@ description: 导出 iMessage/短信聊天记录并做统计分析与 AI 文字�
   2. `brew install imessage-exporter`
   3. `imessage-exporter -d` 验证权限通了。
   4. 导出：单会话 `imessage-exporter -f txt -t "手机号或邮箱"`；全量 `imessage-exporter -f txt`。默认输出 `~/imessage_export/`。
-  5. iOS 备份场景：`imessage-exporter -f txt -p /path/to/backup`（加密备份会提示输密码）。
 - 不可代用户授权系统权限；`brew` 安装失败时提示用户手动执行。
 
 ## 2. 运行解析器
@@ -34,7 +33,6 @@ python3 -m imsg_analyzer ~/imessage_export -o imsg_analysis
 
 每个会话产出三件套：`*.stats.md`（统计报告）、`*.stats.json`（机器可读）、`*.condensed.txt`（LLM 友好转写：媒体折叠为 `[图×N]` 标签，按天分节）。批量模式额外产出 `index.md` 总览。
 
-图形界面替代：`python3 -m imsg_analyzer.webui <导出目录>` 启动本地 Web 控制台（仅绑定 127.0.0.1），提供会话浏览、调用 imessage-exporter 导出、统计/转写查看、OpenAI 兼容 API 一键分析。用户偏好图形界面时推荐；提醒 API Key 只存页面内存。
 
 ## 3. 产出分析
 
